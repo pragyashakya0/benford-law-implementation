@@ -1,0 +1,112 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(208, 222, 231);
+  padding:100px 0;
+}
+
+#container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+  background-color: rgb(252, 236, 236);
+  padding: 20px 0;
+  width:500px;
+  height:400px;
+}
+
+#uploadFile,
+#randomData {
+  display: inline-block;
+  padding: 15px 20px;
+  border-radius: 30px;
+  background-color: rgb(231, 12, 12);
+  opacity:0.4;
+  color: white;
+}
+
+#uploadFile:hover,
+#randomData:hover {
+  transition: 0.3s;
+  opacity:0.9;
+}
+
+a {
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 20px;
+  color:rgb(184, 182, 182)
+
+}
+
+#uploadCSVContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 100px;
+}
+
+
+label {
+  font-size: 30px;
+  font-weight: bold;
+  font-family:'Times New Roman', Times, serif;
+  color:rgb(0, 0, 0)
+}
+
+
+#uploadCSV{
+  font-size: 20px;
+  padding: 30px 20px 30px 0px;
+}
+
+
+#checkUploadedCSV {
+  display: block;
+  width: 100px;
+  padding: 5px 0;
+  border: 1px solid rgb(184, 182, 182);
+  border-radius: 5px;
+  background-color:rgb(231, 12, 12);
+  opacity:0.6;
+  color:rgb(255, 255, 255);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#randomCSVContainer {
+  padding: 30px;
+}
+
+#checkRandomCSV {
+  display: inline-block;
+  border: 1px solid rgb(184, 182, 182);
+  border-radius: 8px;
+  padding:20px;
+  background-color: rgb(231, 12, 12);
+  color: rgb(255, 255, 255);
+  opacity:0.6;
+  cursor: pointer;
+
+}
+
+#checkUploadedCSV:hover,
+#checkRandomCSV:hover {
+  transition: 0.3s;
+  opacity: 0.9;
+}
+
+#uploadCSVContainer,
+#randomCSVContainer {
+  display: none;
+}
